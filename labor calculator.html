@@ -8,7 +8,7 @@
     <!-- 設定字符編碼為UTF-8(支援中文) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 設定響應式網頁，讓手機也能正常顯示 -->
-    <title>2025年勞健保級距計算器</title>
+    <title>2025勞健保級距計算器</title>
     <!-- 網頁標題(顯示在瀏覽器分頁上) -->
     <style>
         /* CSS樣式區塊開始 */
@@ -26,7 +26,17 @@
         }
         h1, h2 {
             color: #2c3e50;
-            /* 深藍色標題 */
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 24px;  /* 修改：設定h2標題的字體大小與h1一致 */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        /* 深藍色標題 */
             text-align: center;
             /* 文字置中 */
         }
@@ -91,11 +101,15 @@
             /* 鼠標懸停時變深藍色 */
         }
         .result {
-            margin-top: 10px;  /* 從原本的15px縮短為10px */
+            margin-top: 0px;  /* 從10px縮短為5px */
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 5px;
             border-left: 5px solid #3498db;
+        }
+        .result h2 {
+            margin-top: 0;  /* 新增：移除h2的頂部間距 */
+            margin-bottom: 15px;  /* 新增：保持底部間距 */
         }
         .result-item {
             margin-bottom: 15px;
@@ -120,7 +134,7 @@
             text-align: left;
         }
         .links h3 {
-            margin-top: 10px;  /* 新增樣式：調整h3標題的上邊距 */
+            margin-top: 5px;  /* 新增樣式：調整h3標題的上邊距 */
             margin-bottom: 0px;  /* 新增樣式：調整h3標題的下邊距 */
         }
         .links a {
